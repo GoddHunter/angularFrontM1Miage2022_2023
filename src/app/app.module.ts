@@ -9,6 +9,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { AssignmentsComponent } from './assignments/assignments.component';
 import { RenduDirective } from './assignments/shared/rendu.directive';
+import { FormsModule } from '@angular/forms';
+
+// Material imports
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -20,9 +24,11 @@ import { RenduDirective } from './assignments/shared/rendu.directive';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatButtonModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
-export interface Assignment {
-  nom: string;
-  dateDeRendu: string;
-  rendu: boolean;
+export class Assignment {
+  nom!: string;
+  dateDeRendu!: string;
+  rendu!: boolean;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Assignment } from '../assignment';
 
 @Component({
@@ -6,8 +6,10 @@ import { Assignment } from '../assignment';
   templateUrl: './assignments.component.html',
   styleUrls: ['./assignments.component.css']
 })
-export class AssignmentsComponent {
-  title= 'My app on assignments !';
+export class AssignmentsComponent implements OnInit {
+  title = 'My app on assignments !';
+  ajoutActive = false;
+  nomDevoir: string ="";
 
   assignments: Assignment[] = [
     {
@@ -26,4 +28,15 @@ export class AssignmentsComponent {
       rendu: false
     },
   ];
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.ajoutActive = true;
+    }, 2000);
+  }
+
+  onSubmit(nom: string) {
+    console.log(nom);
+    //event.preventDefault();
+  }
 }

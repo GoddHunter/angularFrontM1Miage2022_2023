@@ -1,7 +1,7 @@
 <p>{{title}}</p>
 
 <div *ngFor="let assignment of assignments"
-  [ngStyle]="{'color': assignment.rendu ? 'green' : 'red'}">
+  [ngClass]="{'rendu': assignment.rendu, 'nonRendu' : !assignment.rendu}">
   <p *ngIf="assignment.rendu; else nonsoumis">
     Devoir intitulé {{assignment.nom}}, rendu le {{assignment.dateDeRendu}}
   </p>

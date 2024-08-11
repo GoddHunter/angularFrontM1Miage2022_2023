@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 
 // Material imports
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButtonModule,
     MatDividerModule,
     MatIconModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

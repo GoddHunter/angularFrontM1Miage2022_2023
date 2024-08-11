@@ -3,6 +3,7 @@
 <form ngForm #assignmentForm class="form">
     <mat-form-field>
         <input matInput [(ngModel)]="nomDevoir" name="nom">
+        <mat-hint>MM/DD/YYYY</mat-hint>
     </mat-form-field>
     <p>{{nomDevoir}}</p>
     <button mat-stroked-button

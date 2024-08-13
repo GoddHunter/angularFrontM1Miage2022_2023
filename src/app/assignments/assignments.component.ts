@@ -13,17 +13,17 @@ export class AssignmentsComponent implements OnInit {
 
   assignments: Assignment[] = [
     {
-      nom: 'TP1',
+      nom: "TP1 sur WebComponents, un lecteur audio amélioré",
       dateDeRendu: new Date('2020-11-17'),
       rendu: true
     },
     {
-      nom: 'TP2',
+      nom: "TP2 sur Angular, un joli gestionnaire de devoirs(Assignments)",
       dateDeRendu: new Date('2020-12-15'),
       rendu: false
     },
     {
-      nom: 'TP3',
+      nom: "TP3 sur Angular, utilisation du router et de Web Services",
       dateDeRendu: new Date('2020-01-04'),
       rendu: false
     },

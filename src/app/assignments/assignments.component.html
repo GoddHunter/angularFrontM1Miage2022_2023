@@ -24,7 +24,7 @@
 
 <mat-list *ngFor="let assignment of assignments">
   <h3 [ngClass]="'date'" mat-subheader>{{assignment.dateDeRendu | date}}</h3>
-  <mat-list-item>
+  <mat-list-item (click)="assignementClick(assignment)">
     <p appRendu *ngIf="assignment.rendu; else nonsoumis">
       The duty entitled "{{assignment.nom}}"
     </p>
@@ -35,4 +35,4 @@
   <mat-divider></mat-divider>
 </mat-list>
 
-<app-assignment-detail></app-assignment-detail>
+<app-assignment-detail [assignmentReceived]="assignmentSelect"></app-assignment-detail>

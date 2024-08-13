@@ -10,6 +10,7 @@ export class AssignmentsComponent implements OnInit {
   title = 'My app on assignments !';
   ajoutActive = false;
   nomDevoir: string ="";
+  assignmentSelect!:Assignment;
 
   assignments: Assignment[] = [
     {
@@ -33,6 +34,10 @@ export class AssignmentsComponent implements OnInit {
     setTimeout(() => {
       this.ajoutActive = true;
     }, 2000);
+  }
+
+  assignementClick(assignment:Assignment) {
+    this.assignmentSelect = assignment;
   }
 
   onSubmit(nom: string) {
